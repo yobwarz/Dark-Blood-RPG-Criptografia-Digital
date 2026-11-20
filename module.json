@@ -1,0 +1,41 @@
+{
+  "id": "sangue-escuro-criptografia",
+  "title": "Sangue Escuro: Criptografia Digital",
+  "description": "Selos de Protocolo com sequências de perícias, concentração, auxílio, chaves individuais e etapas ocultas. Auxiliar opcional para todas as expansões.",
+  "version": "0.2.1",
+  "authors": [
+    {
+      "name": "Yob Warz — Sangue Escuro RPG"
+    }
+  ],
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "sangue-escuro",
+        "type": "system",
+        "compatibility": {
+          "minimum": "0.8.11"
+        }
+      }
+    ]
+  },
+  "esmodules": [
+    "scripts/main.mjs"
+  ],
+  "styles": [
+    "assets/criptografia.css"
+  ],
+  "flags": {
+    "sangue-escuro": {
+      "tipo": "auxiliar"
+    }
+  },
+  "license": "LICENSE",
+  "url": "https://github.com/yobwarz/Dark-Blood-RPG-Criptografia-Digital",
+  "manifest": "https://raw.githubusercontent.com/yobwarz/Dark-Blood-RPG-Criptografia-Digital/main/module.json",
+  "download": "https://raw.githubusercontent.com/yobwarz/Dark-Blood-RPG-Criptografia-Digital/v0.2.1/dist/sangue-escuro-criptografia.zip"
+}

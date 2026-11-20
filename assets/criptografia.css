@@ -1,0 +1,29 @@
+.cd-app{--cd-bg:var(--se-fundo,#17191d);--cd-panel:var(--se-painel,#22262c);--cd-ink:var(--se-texto,#e3dfd4);--cd-accent:var(--se-detalhe,#b7a681);background:var(--cd-bg);color:var(--cd-ink)}.cd-app .window-content{padding:0}.cd-body{overflow:auto;padding:24px;line-height:1.5;scrollbar-gutter:stable}.cd-body header{padding-bottom:20px;border-bottom:1px solid var(--cd-accent)}.cd-kicker{font-size:11px;letter-spacing:.15em}.cd-body h1,.cd-body h2,.cd-body h3{color:var(--cd-accent);border:0}.cd-body h1{font-size:28px}.cd-body h2{font-size:21px;margin:0}.cd-body article,.cd-body section{padding:18px;margin:20px 0;background:var(--cd-panel);border:1px solid color-mix(in srgb,var(--cd-accent) 45%,transparent);border-radius:5px}.cd-row,.cd-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.cd-row{justify-content:space-between}.cd-app button{width:auto;flex:0 1 auto;min-height:32px;height:auto;padding:4px 12px;white-space:normal}.cd-badge{font-variant-numeric:tabular-nums;border:1px solid var(--cd-accent);border-radius:20px;padding:3px 10px}.cd-sequence{display:flex;gap:24px;flex-wrap:wrap;padding-left:24px}.cd-sequence li{padding:4px 8px}.cd-sequence .current{outline:1px solid var(--cd-accent);border-radius:3px}.cd-pre{white-space:pre-wrap;overflow-wrap:anywhere}.cd-body details{margin:16px 0}.cd-body summary{cursor:pointer;font-weight:bold}.cd-running{border-left:3px solid var(--cd-accent);padding:10px 14px}.cd-warning{border-color:var(--se-destaque,#b66060)!important}.cd-request{border-bottom:1px solid color-mix(in srgb,var(--cd-accent) 25%,transparent);padding:12px 0}.cd-request>span{margin-left:12px}.cd-body footer{font-size:12px;opacity:.8}.cd-form{display:flex;flex-direction:column;gap:12px}.cd-form label{display:flex;flex-direction:column;gap:5px}.cd-form .cd-check{flex-direction:row;align-items:center}.cd-form textarea{resize:vertical;min-height:80px}.cd-form [data-form-error]{color:var(--color-level-error,#ed9e8d)}.cd-dialog .form-footer{display:flex;gap:8px}
+/* Editor: campos essenciais primeiro, rolagem no conteúdo e ações sempre visíveis. */
+.cd-dialog{max-width:calc(100vw - 32px);max-height:calc(100dvh - 32px)}
+.cd-dialog .window-content{display:flex;flex-direction:column;overflow:hidden;min-height:0}
+.cd-dialog form{display:flex;flex-direction:column;min-height:0;overflow:hidden;flex:1 1 auto}
+.cd-dialog .dialog-content{overflow-y:auto;min-height:0;flex:1 1 auto;scrollbar-gutter:stable}
+.cd-dialog .form-footer{position:sticky;bottom:0;flex:0 0 auto;margin:0;padding:12px 8px;background:var(--se-fundo,#17191d);border-top:1px solid var(--se-detalhe,#a89977);z-index:2}
+.cd-dialog .form-footer button{min-height:36px}
+.cd-dialog .cd-form{padding:4px 6px 12px;font-size:14px}
+.cd-dialog .cd-form section{margin-bottom:16px}.cd-dialog .cd-form h3{margin:10px 0;color:var(--se-detalhe,#b7a681)}
+.cd-dialog .cd-two{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:12px}
+.cd-dialog .cd-recommendation{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:10px 0}
+.cd-dialog .cd-recommendation button{width:auto;flex:0 0 auto}
+.cd-dialog .cd-help{font-size:13px;opacity:.85;margin:8px 0}
+.cd-dialog .cd-step{display:grid;grid-template-columns:64px minmax(0,1fr) minmax(0,1fr);align-items:center;gap:10px;margin:10px 0;padding:10px;background:var(--se-painel,#22262c);border-radius:4px}
+.cd-dialog .cd-step strong{font-size:13px}.cd-dialog [data-cd-steps]{margin:12px 0}
+.cd-dialog .cd-editor-detail{padding:12px 0;border-top:1px solid color-mix(in srgb,var(--se-detalhe,#a89977) 35%,transparent)}
+.cd-dialog .cd-editor-detail summary{cursor:pointer;font-weight:bold;margin-bottom:10px}
+.cd-dialog .cd-editor-detail label{margin-top:10px}.cd-dialog [hidden]{display:none!important}
+.cd-dialog [data-form-error]:empty{display:none}.cd-dialog [data-form-error]:not(:empty){position:sticky;bottom:0;padding:10px;background:var(--se-fundo,#17191d);border:1px solid var(--color-level-error,#ed9e8d);z-index:1}
+@media(max-width:560px){.cd-dialog .cd-two{grid-template-columns:1fr}.cd-dialog .cd-step{grid-template-columns:1fr}.cd-dialog .cd-step strong{font-size:14px}}
+.cd-app .cd-primary{font-size:17px;padding:9px 26px;border:1px solid var(--cd-accent);background:var(--cd-panel);font-weight:bold}
+.cd-skill-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.cd-dialog .cd-skill-option{display:flex;flex-direction:row;align-items:center;gap:7px;padding:9px;border:1px solid var(--se-detalhe,#a89977);border-radius:4px;cursor:pointer}.cd-skill-option:has(input:checked){background:var(--se-painel,#22262c);outline:2px solid var(--se-detalhe,#a89977)}.cd-skill-picker{border:0;padding:0;margin:12px 0}.cd-attempt>label{margin:10px 0}.cd-attempt details label{margin:10px 0}.cd-last-result{border-left:3px solid var(--cd-accent);padding:10px 14px;margin:16px 0;background:var(--cd-bg)}.cd-last-result.failure{border-color:#d68f7a}.cd-last-result.success{border-color:#9db78d}.cd-requests{padding:16px 0}.cd-requests>summary{font-size:17px}
+@media(max-width:650px){.cd-skill-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+/* Only test cards; update/request notices retain their existing appearance. */
+.chat-message.cd-test-message.whisper{background:var(--se-fundo,#171a1d)!important;color:var(--se-texto,#dce1e8)}
+.chat-message.cd-test-message .message-content{color:var(--se-texto,#dce1e8)}
+.chat-message.cd-test-message :is(.whisper-to,.whisper-to a){color:var(--se-texto-fraco,#adb6c2)}
+.cd-app button.cd-primary{display:inline-flex;align-items:center;justify-content:center;text-align:center;line-height:1.25;min-height:40px;padding:8px 24px}

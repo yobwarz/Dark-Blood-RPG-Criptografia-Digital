@@ -1,0 +1,53 @@
+[
+  {
+    "name": "Leitor de Protocolos Portátil",
+    "type": "equipamento",
+    "img": "modules/sangue-escuro-criptografia/assets/reader.svg",
+    "system": {
+      "categoria": "tecnologia",
+      "quantidade": 1,
+      "porCompartimento": 1,
+      "descricao": "<p>Concede Vantagem em um teste de Criptografia Digital por dia. Marque seu UUID no início da etapa; o uso só é debitado quando o teste é resolvido. Amanhecer ou 24 horas configuráveis.</p>"
+    },
+    "flags": {
+      "sangue-escuro-criptografia": {
+        "tool": "reader"
+      }
+    },
+    "pasta": "Criptografia Digital — Apoio"
+  },
+  {
+    "name": "Kit de Bypass de Emergência",
+    "type": "equipamento",
+    "img": "modules/sangue-escuro-criptografia/assets/kit.svg",
+    "system": {
+      "categoria": "tecnologia",
+      "quantidade": 1,
+      "porCompartimento": 1,
+      "descricao": "<p>Consumível. Preparar no painel consome uma unidade e impede o aumento de CD da próxima falha de descriptografia deste objeto. A falha ainda perde toda a sequência.</p>"
+    },
+    "flags": {
+      "sangue-escuro-criptografia": {
+        "tool": "kit"
+      }
+    },
+    "pasta": "Criptografia Digital — Apoio"
+  },
+  {
+    "name": "Token de Administrador",
+    "type": "equipamento",
+    "img": "modules/sangue-escuro-criptografia/assets/admin.svg",
+    "system": {
+      "categoria": "tecnologia",
+      "quantidade": 1,
+      "porCompartimento": 1,
+      "descricao": "<p>Autoriza acesso individual temporário, sem quebrar a criptografia. A duração é configurada pelo Mestre no protocolo; padrão 60 minutos.</p>"
+    },
+    "flags": {
+      "sangue-escuro-criptografia": {
+        "tool": "admin"
+      }
+    },
+    "pasta": "Criptografia Digital — Apoio"
+  }
+]
